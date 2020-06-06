@@ -5,6 +5,8 @@ class Solution:
             dp.append(amount+1)
         for i in range(0, amount+1):
             for j in range(0, len(coins)):
+            #as we should know the amount of money needed left over, we should subtract i(amount)-coins[j](the amount of the coin)
+            #and add one as well(to indicate that one coin has been considered to create the i(amount)).
                 if(i>=coins[j]):
                     dp[i] = min(dp[i], 1+dp[i-coins[j]])
         if(dp[amount]>amount):
