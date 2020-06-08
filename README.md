@@ -1,2 +1,2 @@
-# DynamicProgramming
-Personal Development in DP
+#LeetCode practice
+Personal Development in DS and Algo
